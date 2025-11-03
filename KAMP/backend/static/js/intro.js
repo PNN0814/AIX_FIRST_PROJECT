@@ -7,8 +7,8 @@ function navigateToDashboard() {
 document.addEventListener('DOMContentLoaded', function() {
     // Animate elements on scroll
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
+        threshold: 0,
+        rootMargin: '0px 0px 200px 0px'
     };
 
     const observer = new IntersectionObserver(function(entries) {

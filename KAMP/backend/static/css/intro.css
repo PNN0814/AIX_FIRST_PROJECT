@@ -128,7 +128,7 @@
 }
 
 .achievement-value {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 8px;
@@ -182,12 +182,23 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    /* background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); */
+    background-size: cover;     /* 이미지 전체가 보이게 */
+    background-position: center;  /* 가운데 정렬 */
+    background-color: #000;       /* 이미지 주변 여백 색 (선택) */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     border: 3px solid rgba(59, 130, 246, 0.3);
+}
+
+.avatar-circle.person1{
+    background-image: url('/static/image/gihong.png');
+}
+
+.avatar-circle.person2{
+    background-image: url('/static/image/jisung.png');
 }
 
 .avatar-initial {
