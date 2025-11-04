@@ -1,0 +1,4 @@
+﻿Date,Product_Number,Pred_Value,MAE,SMAPE,Accuracy
+2022-05-12,Product_88,296,2.83,0.96,99.04
+2022-05-13,Product_88,293,2.83,0.96,99.04
+2022-05-14,Product_88,293,2.83,0.96,99.04
