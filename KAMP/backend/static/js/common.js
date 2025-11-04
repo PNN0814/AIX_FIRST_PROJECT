@@ -308,57 +308,64 @@ window.chartBaseOptions = {
 window.chartInstances_A = {};
 window.chartInstances_B = {};
 
-// 기존 common.js 아래쪽의 탭 전환 부분 교체 또는 추가
 document.addEventListener("DOMContentLoaded", () => {
     const navItems = document.querySelectorAll(".nav-item");
     const tabContents = document.querySelectorAll(".tab-content");
 
-    // 최초 페이지 진입 시 A탭 활성화
+    // ✅ 최초 페이지 진입 시 A탭 활성화 + Accuracy 표시
     tabContents.forEach(c => c.classList.remove("active"));
     document.getElementById("tab-preprocessing1")?.classList.add("active");
     navItems.forEach(i => i.classList.remove("active"));
     document.querySelector(".nav-item[data-tab='preprocessing1']")?.classList.add("active");
 
-    // ✅ 전역 탭 전환 함수 (리셋 + 기본 렌더 포함)
+    // ✅ A탭일 때 Accuracy 보이기
+    const accItem = document.querySelector(".info-accuracy");
+    if (accItem) accItem.style.display = "flex";
+
     window.switchTab = function (tabName) {
-        // 모든 탭 비활성화
         tabContents.forEach(c => c.classList.remove("active"));
         navItems.forEach(i => i.classList.remove("active"));
 
-        // 선택 탭 활성화
         document.getElementById(`tab-${tabName}`)?.classList.add("active");
         document.querySelector(`.nav-item[data-tab='${tabName}']`)?.classList.add("active");
         document.querySelector(".main-content")?.scrollTo({ top: 0, behavior: "smooth" });
 
-        // ✅ 각 탭별 기본 상태 강제 리셋
+        // ✅ Accuracy 표시/숨김 제어
+        const accItem = document.querySelector(".info-accuracy");
+        if (accItem) {
+            if (tabName === "preprocessing1") {
+                accItem.style.display = "flex";
+            } else if (tabName === "preprocessing2") {
+                accItem.style.display = "none";
+            }
+        }
+
+        // ✅ 각 탭 기본 상태 초기화 + 렌더 호출
         if (tabName === "preprocessing1") {
-            // A탭 초기화
             document.querySelectorAll("#tab-preprocessing1 .subtab").forEach(t => t.classList.remove("active"));
             document.querySelector("#tab-preprocessing1 .subtab[data-target='subtab-predict']")?.classList.add("active");
             document.querySelectorAll("#tab-preprocessing1 .subtab-content").forEach(c => c.classList.remove("active"));
             document.getElementById("subtab-predict")?.classList.add("active");
-
-            // 필터 초기화
             document.querySelectorAll("#tab-preprocessing1 .filter-button").forEach(b => b.classList.remove("active"));
             document.querySelector("#tab-preprocessing1 .filter-button")?.classList.add("active");
-
-            // ✅ 기본 렌더 호출
             if (window.renderCharts_A) window.renderCharts_A("Product_8");
         }
 
         if (tabName === "preprocessing2") {
-            // B탭 초기화
             document.querySelectorAll("#tab-preprocessing2 .subtab").forEach(t => t.classList.remove("active"));
             document.querySelector("#tab-preprocessing2 .subtab[data-target='subtab-predict-b']")?.classList.add("active");
             document.querySelectorAll("#tab-preprocessing2 .subtab-content").forEach(c => c.classList.remove("active"));
             document.getElementById("subtab-predict-b")?.classList.add("active");
-
-            // 필터 초기화
             document.querySelectorAll("#tab-preprocessing2 .filter-button").forEach(b => b.classList.remove("active"));
             document.querySelector("#tab-preprocessing2 .filter-button")?.classList.add("active");
-
-            // ✅ 기본 렌더 호출
             if (window.renderCharts_B) window.renderCharts_B("Product_8");
+
+            // 탭이 전환된 후 약간의 지연으로 Chart.js 리사이즈 강제
+            setTimeout(() => {
+                Object.values(window.chartInstances_B || {}).forEach(ch => {
+                    if (ch && ch.resize) ch.resize();
+                });
+            }, 300);
         }
     };
 });

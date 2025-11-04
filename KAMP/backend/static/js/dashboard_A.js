@@ -2,6 +2,7 @@
  * 파일명 : dashboard_A.js
  * 설명   : 전처리 A 탭 (Chart.js 중복 생성/충돌 완전 방지 + 데이터값 표시 + 헤더/사이드바 통계 자동 갱신 + 필터 렌더 순서 수정)
  * 개선   : 로딩바 없이 부드러운 fade + 순차 렌더링(progressive render)
+ * 수정   : prediction-table-a 클래스 적용 (A탭 테이블 독립화)
  */
 
 Chart.register(ChartDataLabels);
@@ -231,7 +232,7 @@ Chart.register(ChartDataLabels);
             return { Product_Number: prod, T1: byDate[recent[0]] ?? "-", T2: byDate[recent[1]] ?? "-", T3: byDate[recent[2]] ?? "-" };
         });
         container.innerHTML = `
-            <table class="prediction-table">
+            <table class="prediction-table-a">
                 <thead><tr><th>index</th><th>Product_Number</th>
                 <th>${dateLabels[0]}</th><th>${dateLabels[1]}</th><th>${dateLabels[2]}</th></tr></thead>
                 <tbody>${rows.map((r, i) => `<tr><td>${i + 1}</td><td>${r.Product_Number}</td><td>${r.T1}</td><td>${r.T2}</td><td>${r.T3}</td></tr>`).join("")}</tbody>

@@ -27,7 +27,7 @@
                 </button>
                 <button class="nav-item" data-tab="preprocessing2" onclick="switchTab('preprocessing2')">
                     <span class="nav-icon">🔸</span>
-                    <span>XGBoost</span>
+                    <span>Random Forest</span>
                 </button>
             </nav>
 
@@ -38,10 +38,11 @@
                         <span class="info-value">0.00%</span>
                     </div>
                     <div class="info-item">
-                        <span class="info-label">전체 SMAPE 평균</span>
+                        <span class="info-label">전체 RMSE 평균</span>
                         <span class="info-value">0.00%</span>
                     </div>
-                    <div class="info-item">
+                    <!-- Accuracy 완전 숨김 -->
+                    <div class="info-item info-accuracy" style="display:none;">
                         <span class="info-label">전체 Accuracy 평균</span>
                         <span class="info-value">0.00%</span>
                     </div>
@@ -51,12 +52,12 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- ===================== A 탭 ===================== -->
+            <!-- ===================== A탭 ===================== -->
             <div id="tab-preprocessing1" class="tab-content active">
                 <div class="content-header">
                     <h1 class="content-title">
                         <span class="model-title">LightGBM + CatBoost</span><br>
-                        <span class="model-desc">- T일 예정 수주량 90일치 기준 최대 3일치 예상 수주량</span>
+                        <span class="model-desc">- T일 예약 수주량 90일치 기준 최대 3일치 예상 수주량</span>
                     </h1>
                     <div class="header-stats">
                         <div class="stat-badge"><span class="stat-label">필터별 MAE 평균</span><span class="stat-value">00.0%</span></div>
@@ -93,35 +94,30 @@
                 </div>
             </div>
 
-            <!-- ===================== B 탭 ===================== -->
+            <!-- ===================== B탭 ===================== -->
             <div id="tab-preprocessing2" class="tab-content">
                 <div class="content-header">
                     <h1 class="content-title">
-                        <span class="model-title">XGBoost</span><br>
-                        <span class="model-desc">- 시계열 데이터로 학습한 T일 예정 수주량 예측 모델</span>
+                        <span class="model-title">Random Forest</span><br>
+                        <span class="model-desc">- 시계열 데이터로 학습한 T일 예약 수주량 예측 모델</span>
                     </h1>
                     <div class="header-stats">
                         <div class="stat-badge"><span class="stat-label">필터별 MAE 평균</span><span class="stat-value">00.0%</span></div>
-                        <div class="stat-badge"><span class="stat-label">필터별 SMAPE 평균</span><span class="stat-value">00.0%</span></div>
-                        <div class="stat-badge"><span class="stat-label">필터별 Accuracy 평균</span><span class="stat-value">00.0%</span></div>
+                        <div class="stat-badge"><span class="stat-label">필터별 RMSE 평균</span><span class="stat-value">00.0%</span></div>
+                        <!-- Accuracy 숨김 -->
+                        <div class="stat-badge" style="display:none;"><span class="stat-label">필터별 Accuracy 평균</span><span class="stat-value">-</span></div>
                     </div>
                 </div>
 
                 <div class="subtab-container">
-                    <button class="subtab active" data-target="subtab-predict-b">예측 수주량(막대)</button>
-                    <button class="subtab" data-target="subtab-table-b">예측 수주량(테이블)</button>
-                    <button class="subtab" data-target="subtab-metrics-b">지표 비교</button>
-                    <button class="subtab" data-target="subtab-accuracy-b">정확도 비교</button>
+                    <button class="subtab active" data-target="subtab-predict-b">제품별 평균 MAE(막대)</button>
+                    <button class="subtab" data-target="subtab-metrics-b">실제 VS 예측 비교(선형)</button>
+                    <button class="subtab" data-target="subtab-accuracy-b">실제 VS 예측 비교(테이블)</button>
                 </div>
 
                 <div id="subtab-predict-b" class="subtab-content active">
                     <div class="filter-container" id="filter-predict-b"></div>
                     <div class="chart-container"><canvas id="chart-prep2-prediction"></canvas></div>
-                </div>
-
-                <div id="subtab-table-b" class="subtab-content">
-                    <div class="filter-container" id="filter-table-b"></div>
-                    <div class="chart-container" id="chart-prep2-table"></div>
                 </div>
 
                 <div id="subtab-metrics-b" class="subtab-content">
@@ -131,13 +127,12 @@
 
                 <div id="subtab-accuracy-b" class="subtab-content">
                     <div class="filter-container" id="filter-accuracy-b"></div>
-                    <div class="chart-container"><canvas id="chart-prep2-epochs"></canvas></div>
+                    <div class="chart-container" id="chart-prep2-epochs"></div>
                 </div>
             </div>
         </main>
     </div>
 
-    <!-- JS -->
     <script src="/static/js/common.js"></script>
     <script src="/static/js/dashboard_A.js"></script>
     <script src="/static/js/dashboard_B.js"></script>
