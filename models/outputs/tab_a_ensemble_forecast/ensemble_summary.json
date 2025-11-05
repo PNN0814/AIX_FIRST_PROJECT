@@ -1,0 +1,614 @@
+[
+    {
+        "Product_Number": "Product_86",
+        "MAE": 5.83,
+        "SMAPE": 0.96,
+        "Accuracy": 99.02
+    },
+    {
+        "Product_Number": "Product_87",
+        "MAE": 2.0,
+        "SMAPE": 9.52,
+        "Accuracy": 87.5
+    },
+    {
+        "Product_Number": "Product_88",
+        "MAE": 2.83,
+        "SMAPE": 0.96,
+        "Accuracy": 99.04
+    },
+    {
+        "Product_Number": "Product_89",
+        "MAE": 2.0,
+        "SMAPE": 3.78,
+        "Accuracy": 95.08
+    },
+    {
+        "Product_Number": "Product_8a",
+        "MAE": 8.84,
+        "SMAPE": 9.8,
+        "Accuracy": 91.04
+    },
+    {
+        "Product_Number": "Product_8b",
+        "MAE": 10.16,
+        "SMAPE": 34.34,
+        "Accuracy": 67.2
+    },
+    {
+        "Product_Number": "Product_8c",
+        "MAE": 11.17,
+        "SMAPE": 35.38,
+        "Accuracy": 65.82
+    },
+    {
+        "Product_Number": "Product_8d",
+        "MAE": 11.17,
+        "SMAPE": 35.38,
+        "Accuracy": 65.82
+    },
+    {
+        "Product_Number": "Product_8e",
+        "MAE": 5.67,
+        "SMAPE": 3.43,
+        "Accuracy": 96.53
+    },
+    {
+        "Product_Number": "Product_8f",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_90",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_91",
+        "MAE": 0.66,
+        "SMAPE": 13.34,
+        "Accuracy": 77.78
+    },
+    {
+        "Product_Number": "Product_92",
+        "MAE": 1.84,
+        "SMAPE": 2.66,
+        "Accuracy": 97.14
+    },
+    {
+        "Product_Number": "Product_93",
+        "MAE": 2.33,
+        "SMAPE": 6.32,
+        "Accuracy": 92.63
+    },
+    {
+        "Product_Number": "Product_94",
+        "MAE": 1.34,
+        "SMAPE": 1.97,
+        "Accuracy": 98.04
+    },
+    {
+        "Product_Number": "Product_95",
+        "MAE": 3.16,
+        "SMAPE": 2.24,
+        "Accuracy": 97.79
+    },
+    {
+        "Product_Number": "Product_96",
+        "MAE": 9.0,
+        "SMAPE": 10.85,
+        "Accuracy": 90.14
+    },
+    {
+        "Product_Number": "Product_97",
+        "MAE": 0.5,
+        "SMAPE": 100.0,
+        "Accuracy": 50.0
+    },
+    {
+        "Product_Number": "Product_98",
+        "MAE": 24.0,
+        "SMAPE": 36.46,
+        "Accuracy": 68.56
+    },
+    {
+        "Product_Number": "Product_99",
+        "MAE": 2.84,
+        "SMAPE": 1.49,
+        "Accuracy": 98.71
+    },
+    {
+        "Product_Number": "Product_9a",
+        "MAE": 4.0,
+        "SMAPE": 40.89,
+        "Accuracy": 45.0
+    },
+    {
+        "Product_Number": "Product_9c",
+        "MAE": 2.67,
+        "SMAPE": 1.74,
+        "Accuracy": 98.26
+    },
+    {
+        "Product_Number": "Product_9d",
+        "MAE": 3.0,
+        "SMAPE": 14.62,
+        "Accuracy": 85.0
+    },
+    {
+        "Product_Number": "Product_9e",
+        "MAE": 14.84,
+        "SMAPE": 10.02,
+        "Accuracy": 94.72
+    },
+    {
+        "Product_Number": "Product_9f",
+        "MAE": 2.34,
+        "SMAPE": 1.15,
+        "Accuracy": 98.85
+    },
+    {
+        "Product_Number": "Product_a0",
+        "MAE": 21.84,
+        "SMAPE": 3.34,
+        "Accuracy": 96.59
+    },
+    {
+        "Product_Number": "Product_a1",
+        "MAE": 10.0,
+        "SMAPE": 2.48,
+        "Accuracy": 97.62
+    },
+    {
+        "Product_Number": "Product_a2",
+        "MAE": 15.16,
+        "SMAPE": 8.91,
+        "Accuracy": 90.09
+    },
+    {
+        "Product_Number": "Product_a3",
+        "MAE": 1.0,
+        "SMAPE": 5.5,
+        "Accuracy": 93.62
+    },
+    {
+        "Product_Number": "Product_a4",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_a5",
+        "MAE": 6.5,
+        "SMAPE": 33.9,
+        "Accuracy": 57.6
+    },
+    {
+        "Product_Number": "Product_a6",
+        "MAE": 1.34,
+        "SMAPE": 2.99,
+        "Accuracy": 96.94
+    },
+    {
+        "Product_Number": "Product_a7",
+        "MAE": 1.0,
+        "SMAPE": 14.28,
+        "Accuracy": 62.5
+    },
+    {
+        "Product_Number": "Product_a8",
+        "MAE": 0.33,
+        "SMAPE": 5.6,
+        "Accuracy": 87.5
+    },
+    {
+        "Product_Number": "Product_a9",
+        "MAE": 3.0,
+        "SMAPE": 2.38,
+        "Accuracy": 97.62
+    },
+    {
+        "Product_Number": "Product_aa",
+        "MAE": 2.16,
+        "SMAPE": 6.23,
+        "Accuracy": 93.87
+    },
+    {
+        "Product_Number": "Product_ab",
+        "MAE": 3.16,
+        "SMAPE": 7.96,
+        "Accuracy": 91.36
+    },
+    {
+        "Product_Number": "Product_ac",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_ad",
+        "MAE": 1.67,
+        "SMAPE": 4.43,
+        "Accuracy": 95.69
+    },
+    {
+        "Product_Number": "Product_ae",
+        "MAE": 0.16,
+        "SMAPE": 3.7,
+        "Accuracy": 98.34
+    },
+    {
+        "Product_Number": "Product_af",
+        "MAE": 4.0,
+        "SMAPE": 28.98,
+        "Accuracy": 50.0
+    },
+    {
+        "Product_Number": "Product_b0",
+        "MAE": 0.5,
+        "SMAPE": 20.0,
+        "Accuracy": 50.0
+    },
+    {
+        "Product_Number": "Product_b2",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_b3",
+        "MAE": 1.66,
+        "SMAPE": 7.7,
+        "Accuracy": 91.07
+    },
+    {
+        "Product_Number": "Product_b4",
+        "MAE": 6.0,
+        "SMAPE": 26.76,
+        "Accuracy": 78.05
+    },
+    {
+        "Product_Number": "Product_b5",
+        "MAE": 0.16,
+        "SMAPE": 1.58,
+        "Accuracy": 96.43
+    },
+    {
+        "Product_Number": "Product_b6",
+        "MAE": 4.83,
+        "SMAPE": 16.62,
+        "Accuracy": 88.94
+    },
+    {
+        "Product_Number": "Product_b7",
+        "MAE": 2.0,
+        "SMAPE": 1.94,
+        "Accuracy": 98.02
+    },
+    {
+        "Product_Number": "Product_b8",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_b9",
+        "MAE": 4.5,
+        "SMAPE": 3.43,
+        "Accuracy": 96.52
+    },
+    {
+        "Product_Number": "Product_ba",
+        "MAE": 5.0,
+        "SMAPE": 22.94,
+        "Accuracy": 78.26
+    },
+    {
+        "Product_Number": "Product_bb",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_bc",
+        "MAE": 1.0,
+        "SMAPE": 0.62,
+        "Accuracy": 99.39
+    },
+    {
+        "Product_Number": "Product_bd",
+        "MAE": 0.16,
+        "SMAPE": 0.52,
+        "Accuracy": 99.3
+    },
+    {
+        "Product_Number": "Product_be",
+        "MAE": 1.0,
+        "SMAPE": 2.26,
+        "Accuracy": 97.83
+    },
+    {
+        "Product_Number": "Product_bf",
+        "MAE": 1.0,
+        "SMAPE": 2.34,
+        "Accuracy": 97.71
+    },
+    {
+        "Product_Number": "Product_c0",
+        "MAE": 54.66,
+        "SMAPE": 13.36,
+        "Accuracy": 87.08
+    },
+    {
+        "Product_Number": "Product_c1",
+        "MAE": 5.34,
+        "SMAPE": 8.17,
+        "Accuracy": 90.65
+    },
+    {
+        "Product_Number": "Product_c2",
+        "MAE": 8.0,
+        "SMAPE": 4.91,
+        "Accuracy": 95.24
+    },
+    {
+        "Product_Number": "Product_c3",
+        "MAE": 7.67,
+        "SMAPE": 3.84,
+        "Accuracy": 96.66
+    },
+    {
+        "Product_Number": "Product_c4",
+        "MAE": 1.34,
+        "SMAPE": 2.49,
+        "Accuracy": 97.45
+    },
+    {
+        "Product_Number": "Product_c5",
+        "MAE": 7.0,
+        "SMAPE": 2.22,
+        "Accuracy": 97.7
+    },
+    {
+        "Product_Number": "Product_c6",
+        "MAE": 54.66,
+        "SMAPE": 13.36,
+        "Accuracy": 87.08
+    },
+    {
+        "Product_Number": "Product_c7",
+        "MAE": 5.34,
+        "SMAPE": 8.17,
+        "Accuracy": 90.65
+    },
+    {
+        "Product_Number": "Product_c8",
+        "MAE": 8.0,
+        "SMAPE": 4.91,
+        "Accuracy": 95.24
+    },
+    {
+        "Product_Number": "Product_c9",
+        "MAE": 7.67,
+        "SMAPE": 3.84,
+        "Accuracy": 96.66
+    },
+    {
+        "Product_Number": "Product_ca",
+        "MAE": 1.34,
+        "SMAPE": 2.49,
+        "Accuracy": 97.45
+    },
+    {
+        "Product_Number": "Product_cb",
+        "MAE": 7.0,
+        "SMAPE": 2.22,
+        "Accuracy": 97.7
+    },
+    {
+        "Product_Number": "Product_cc",
+        "MAE": 2.84,
+        "SMAPE": 51.74,
+        "Accuracy": 59.53
+    },
+    {
+        "Product_Number": "Product_cd",
+        "MAE": 6.33,
+        "SMAPE": 13.3,
+        "Accuracy": 86.03
+    },
+    {
+        "Product_Number": "Product_ce",
+        "MAE": 3.16,
+        "SMAPE": 1.7,
+        "Accuracy": 98.27
+    },
+    {
+        "Product_Number": "Product_cf",
+        "MAE": 19.5,
+        "SMAPE": 7.74,
+        "Accuracy": 92.7
+    },
+    {
+        "Product_Number": "Product_d0",
+        "MAE": 0.16,
+        "SMAPE": 33.34,
+        "Accuracy": 94.44
+    },
+    {
+        "Product_Number": "Product_d1",
+        "MAE": 5.33,
+        "SMAPE": 15.9,
+        "Accuracy": 83.5
+    },
+    {
+        "Product_Number": "Product_d2",
+        "MAE": 2.34,
+        "SMAPE": 5.49,
+        "Accuracy": 94.85
+    },
+    {
+        "Product_Number": "Product_d3",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_d4",
+        "MAE": 24.84,
+        "SMAPE": 9.18,
+        "Accuracy": 91.37
+    },
+    {
+        "Product_Number": "Product_d5",
+        "MAE": 13.5,
+        "SMAPE": 3.7,
+        "Accuracy": 96.38
+    },
+    {
+        "Product_Number": "Product_d6",
+        "MAE": 0.34,
+        "SMAPE": 0.38,
+        "Accuracy": 99.61
+    },
+    {
+        "Product_Number": "Product_d7",
+        "MAE": 0.16,
+        "SMAPE": 1.01,
+        "Accuracy": 98.75
+    },
+    {
+        "Product_Number": "Product_d8",
+        "MAE": 0.16,
+        "SMAPE": 1.01,
+        "Accuracy": 98.75
+    },
+    {
+        "Product_Number": "Product_d9",
+        "MAE": 2.84,
+        "SMAPE": 11.96,
+        "Accuracy": 88.02
+    },
+    {
+        "Product_Number": "Product_da",
+        "MAE": 0.34,
+        "SMAPE": 13.34,
+        "Accuracy": 80.0
+    },
+    {
+        "Product_Number": "Product_db",
+        "MAE": 1.16,
+        "SMAPE": 14.44,
+        "Accuracy": 92.85
+    },
+    {
+        "Product_Number": "Product_dc",
+        "MAE": 9.0,
+        "SMAPE": 21.06,
+        "Accuracy": 50.0
+    },
+    {
+        "Product_Number": "Product_dd",
+        "MAE": 11.66,
+        "SMAPE": 47.56,
+        "Accuracy": 57.32
+    },
+    {
+        "Product_Number": "Product_de",
+        "MAE": 1.16,
+        "SMAPE": 14.44,
+        "Accuracy": 92.85
+    },
+    {
+        "Product_Number": "Product_df",
+        "MAE": 3.16,
+        "SMAPE": 3.94,
+        "Accuracy": 96.2
+    },
+    {
+        "Product_Number": "Product_e0",
+        "MAE": 4.67,
+        "SMAPE": 0.74,
+        "Accuracy": 99.26
+    },
+    {
+        "Product_Number": "Product_e2",
+        "MAE": 0.16,
+        "SMAPE": 0.36,
+        "Accuracy": 99.64
+    },
+    {
+        "Product_Number": "Product_e3",
+        "MAE": 1.34,
+        "SMAPE": 0.5,
+        "Accuracy": 99.5
+    },
+    {
+        "Product_Number": "Product_e5",
+        "MAE": 8.5,
+        "SMAPE": 76.26,
+        "Accuracy": 45.0
+    },
+    {
+        "Product_Number": "Product_e6",
+        "MAE": 2.5,
+        "SMAPE": 100.0,
+        "Accuracy": 50.0
+    },
+    {
+        "Product_Number": "Product_e7",
+        "MAE": 4.34,
+        "SMAPE": 8.45,
+        "Accuracy": 90.97
+    },
+    {
+        "Product_Number": "Product_e8",
+        "MAE": 2.34,
+        "SMAPE": 8.66,
+        "Accuracy": 91.14
+    },
+    {
+        "Product_Number": "Product_ea",
+        "MAE": 4.33,
+        "SMAPE": 7.33,
+        "Accuracy": 92.4
+    },
+    {
+        "Product_Number": "Product_eb",
+        "MAE": 18.34,
+        "SMAPE": 12.07,
+        "Accuracy": 85.18
+    },
+    {
+        "Product_Number": "Product_ec",
+        "MAE": 4.0,
+        "SMAPE": 7.14,
+        "Accuracy": 94.9
+    },
+    {
+        "Product_Number": "Product_ed",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    },
+    {
+        "Product_Number": "Product_ee",
+        "MAE": 21.33,
+        "SMAPE": 5.1,
+        "Accuracy": 95.4
+    },
+    {
+        "Product_Number": "Product_ef",
+        "MAE": 15.66,
+        "SMAPE": 4.61,
+        "Accuracy": 95.25
+    },
+    {
+        "Product_Number": "Product_f0",
+        "MAE": 0.0,
+        "SMAPE": 0.0,
+        "Accuracy": 100.0
+    }
+]
