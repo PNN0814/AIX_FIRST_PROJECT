@@ -72,17 +72,34 @@ AIX_FIRST_PROJECT/
 
 ## 기술 스택
 
-**Backend**
-- FastAPI
-- Uvicorn
+**데이터 처리**
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
 
-**Machine Learning**
+**머신 러닝**
+- TensorFlow
 - LightGBM
-- CatBoost
+- CATBoost
 - Random Forest
 
-**Frontend**
+**시각화**
+- Chart.js
+- D3.js
+- Plotly
+- Matplotlib
+
+**인프라 구성**
+- Docker
+- AWS
+- MYSQL
+- Firebase
+
+**프론트/백엔드**
 - HTML, CSS, JavaScript
 - Chart.js
+- FastAPI
+- Uvicorn
 
 ---
