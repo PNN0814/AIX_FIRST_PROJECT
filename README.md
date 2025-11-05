@@ -19,7 +19,7 @@
 ### 2. 가상환경 생성 및 활성화
 
 ```bash
-conda create -n AIX_FIRST_PROJECT_310 python=3.10
+conda create -n AIX_FIRST_PROJECT_310 python=3.10 -y
 conda activate AIX_FIRST_PROJECT_310
 python -m pip install --upgrade pip
 ```
@@ -28,7 +28,7 @@ python -m pip install --upgrade pip
 
 ```bash
 cd AIX_FIRST_PROJECT
-pip install -r requirements.txt
+pip install -r requirements/requirements.txt
 ```
 
 ---
@@ -36,8 +36,7 @@ pip install -r requirements.txt
 ## 실행 방법
 
 ```bash
-cd AIX_FIRST_PROJECT/AIX_FIRST_PROJECT
-uvicorn main:app --reload
+uvicorn backend.main:app --reload
 ```
 
 브라우저에서 접속: **`http://127.0.0.1:8000`**
@@ -49,7 +48,7 @@ uvicorn main:app --reload
 ```
 AIX_FIRST_PROJECT/
 ├── AIX_FIRST_PROJECT/
-│   ├── main.py                 # FastAPI 서버 진입점
+│   ├── main.py                 # FastAPI 웹/학습 데이터 불러오기 라우팅 처리
 │   ├── templates/              # HTML 템플릿
 │   │   ├── intro.html
 │   │   └── dashboard.html
@@ -58,9 +57,9 @@ AIX_FIRST_PROJECT/
 │   │   └── js/
 │   └── models/                 # ML 모델 학습 및 예측 코드
 │       ├── common.py
-│       ├── train_tab_a_lightgbm_forecast.py
 │       ├── train_tab_a_catboost_forecast.py
-│       ├── train_tab_b_randomforest_forecast.py
+│       ├── train_tab_a_ensemble_forecast.py
+│       ├── train_tab_a_lightgbm_forecast.py
 │       └── outputs/            # 학습된 모델 저장
 ├── data/
 │   ├── raw/                    # 원본 데이터
