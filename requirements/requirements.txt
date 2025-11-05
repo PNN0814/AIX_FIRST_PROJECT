@@ -1,0 +1,29 @@
+# pip install --upgrade pip
+fastapi==0.94.1
+uvicorn[standard]==0.23.2
+jinja2==3.1.2
+
+# 데이터 분석
+pandas==2.0.3
+numpy==1.23.5
+scikit-learn==1.3.0
+
+# 딥러닝 (TensorFlow + Keras)
+tensorflow==2.12.0
+keras==2.12.0
+h5py==3.8.0
+protobuf==3.20.3
+opt-einsum==3.3.0
+absl-py==1.4.0
+wrapt==1.14.1
+
+# 시각화
+plotly==5.14.0
+matplotlib==3.5.2
+
+# 환경 변수
+python-dotenv==1.0.0
+
+# 머신러닝 (부스팅 계열)
+lightgbm==3.3.5
+catboost==1.2.3
