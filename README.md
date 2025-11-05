@@ -18,6 +18,8 @@
 
 ### 2. 가상환경 생성 및 활성화
 
+ROOT 폴더인 **AIX_FIRST_PROJECT** 기준으로 설명합니다.
+
 ```bash
 conda create -n AIX_FIRST_PROJECT_310 python=3.10 -y
 conda activate AIX_FIRST_PROJECT_310
