@@ -51,7 +51,7 @@ AIX_FIRST_PROJECT/
 │   │   │   ├── css/     # css 파일
 │   │   │   ├── image/   # image 파일
 │   │   │   └── js/      # js 파일
-│   │   └── templates/   # HTML 템플릿
+│   └── └── templates/   # HTML 템플릿
 
 ├── data/             # 전처리/데이터셋 관련 파일
 │   ├── processed/    # 전처리 하는 python 파일
@@ -63,7 +63,7 @@ AIX_FIRST_PROJECT/
 │   │   ├── tab_a_catboost_forecast/       # catboost 학습 데이터
 │   │   ├── tab_a_ensemble_forecast/       # lightgbm + catboost 앙상블 데이터
 │   │   ├── tab_a_lightgbm_forecast/       # lightgbm 학습 데이터
-│   │   └── tab_b_randomforest_forecast/   # random forest 학습 데이터
+│   └── └── tab_b_randomforest_forecast/   # random forest 학습 데이터
 
 └── requirements/  # 라이브러리 관련 파일
 ```
