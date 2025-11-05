@@ -27,7 +27,6 @@ python -m pip install --upgrade pip
 ### 3. 패키지 설치
 
 ```bash
-cd AIX_FIRST_PROJECT
 pip install -r requirements/requirements.txt
 ```
 
@@ -47,42 +46,27 @@ uvicorn backend.main:app --reload
 
 ```
 AIX_FIRST_PROJECT/
-├── AIX_FIRST_PROJECT/
-│   ├── main.py                 # FastAPI 웹/학습 데이터 불러오기 라우팅 처리
-│   ├── templates/              # HTML 템플릿
-│   │   ├── intro.html
-│   │   └── dashboard.html
-│   ├── static/                 # CSS, JavaScript 파일
-│   │   ├── css/
-│   │   └── js/
-│   └── models/                 # ML 모델 학습 및 예측 코드
-│       ├── common.py
-│       ├── train_tab_a_catboost_forecast.py
-│       ├── train_tab_a_ensemble_forecast.py
-│       ├── train_tab_a_lightgbm_forecast.py
-│       └── outputs/            # 학습된 모델 저장
-├── data/
-│   ├── raw/                    # 원본 데이터
-│   ├── processed/              # 전처리된 데이터
-│   └── results/                # 예측 결과
-├── performance_result.csv      # 모델 성능 지표
-├── final_results.csv          # 최종 예측 결과
-├── requirements.txt
-└── README.md
+│   ├── backend/         # 웹 및 FastAPI 관련 파일
+│   │   ├── static/      # css, image, js 관련 파일
+│   │   │   ├── css/     # css 파일
+│   │   │   ├── image/   # image 파일
+│   │   │   └── js/      # js 파일
+│   │   └── templates/   # HTML 템플릿
+
+├── data/             # 전처리/데이터셋 관련 파일
+│   ├── processed/    # 전처리 하는 python 파일
+│   ├── raw/          # 데이터셋 원본 csv 데이터
+│   └── results/      # 전처리된 csv 데이터
+
+├── models/                                # ML 모델 학습 및 예측 코드
+│   ├── outputs/                           # 학습된 모델 저장
+│   │   ├── tab_a_catboost_forecast/       # catboost 학습 데이터
+│   │   ├── tab_a_ensemble_forecast/       # lightgbm + catboost 앙상블 데이터
+│   │   ├── tab_a_lightgbm_forecast/       # lightgbm 학습 데이터
+│   │   └── tab_b_randomforest_forecast/   # random forest 학습 데이터
+
+└── requirements/  # 라이브러리 관련 파일
 ```
-
----
-
-## 주요 파일 설명
-
-| 파일/폴더 | 설명 |
-|---------|------|
-| `main.py` | FastAPI 웹 서버 및 API 엔드포인트 |
-| `models/` | 각 머신러닝 모델의 학습 및 예측 스크립트 |
-| `templates/` | 웹 인터페이스 HTML |
-| `static/` | CSS 스타일 및 JavaScript 대시보드 로직 |
-| `performance_result.csv` | 모델별 성능 비교 결과 |
-| `final_results.csv` | 수주량 예측 결과 |
 
 ---
 
@@ -95,10 +79,10 @@ AIX_FIRST_PROJECT/
 **Machine Learning**
 - LightGBM
 - CatBoost
-- Random Forest (scikit-learn)
+- Random Forest
 
 **Frontend**
-- HTML5, CSS3, JavaScript
+- HTML, CSS, JavaScript
 - Chart.js
 
 ---
