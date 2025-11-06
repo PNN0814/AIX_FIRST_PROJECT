@@ -1,7 +1,7 @@
 # 계속해서 세팅할 필요 없이 여기서 경로 설정을 다 해줌
 import os
 
-# ~/KAMP/data 까지의 디렉토리
+# ~/data 까지의 디렉토리
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 각 폴더에 맞게 디렉토리 세팅

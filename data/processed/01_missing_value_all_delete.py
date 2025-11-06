@@ -1,6 +1,6 @@
 """
 실행법
-    - 1. 프로젝트의 ROOT 폴더로 이동 | ~/KAMP
+    - 1. 프로젝트의 ROOT 폴더로 이동 | ~/
     - 2. cmd에 코드 실행           | python -m data.processed.01_missing_value_all_delete
 """
 

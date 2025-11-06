@@ -1,6 +1,6 @@
 """
 실행법
-    - 1. 프로젝트의 ROOT 폴더로 이동 | ~/KAMP
+    - 1. 프로젝트의 ROOT 폴더로 이동 | ~/
     - 2. cmd에 코드 실행           | python -m data.processed.02_data_cleansing
 """
 
@@ -51,7 +51,6 @@ Q. 결과
     - 단위(정수/소수) 및 정밀도가 통일된 상태로 모델 학습에 바로 활용 가능
     - 이후 이상치 탐지(Outlier Detection) 및 스케일링 단계로 연계됨
 """
-
 
 import os
 import pandas as pd
