@@ -1,7 +1,7 @@
 # 계속해서 세팅할 필요 없이 여기서 경로 설정을 다 해줌
 import os
 
-# ~/KAMP/models 까지의 경로
+# ~/models 까지의 경로
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # 출력 폴더 (학습 결과 저장)
