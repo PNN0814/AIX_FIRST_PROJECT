@@ -1,4 +1,6 @@
 # pip install --upgrade pip
+
+# 기본 웹 환경
 fastapi==0.94.1
 uvicorn[standard]==0.23.2
 jinja2==3.1.2
