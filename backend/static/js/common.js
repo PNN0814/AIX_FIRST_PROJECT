@@ -1,6 +1,6 @@
 // Common JavaScript - 공통 JavaScript
 
-// Smooth Scroll
+// 부드러운 스크롤 이동
 function smoothScrollTo(target) {
     const element = document.querySelector(target);
     if (element) {
@@ -8,7 +8,7 @@ function smoothScrollTo(target) {
     }
 }
 
-// Debounce Function
+// 디바운스 함수
 function debounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -21,7 +21,7 @@ function debounce(func, wait) {
     };
 }
 
-// Throttle Function
+// 쓰로틀 함수
 function throttle(func, limit) {
     let inThrottle;
     return function(...args) {
@@ -33,7 +33,7 @@ function throttle(func, limit) {
     };
 }
 
-// Intersection Observer for Animations
+// 스크롤 애니메이션 초기화
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -58,12 +58,12 @@ function initScrollAnimations() {
     });
 }
 
-// Initialize animations on DOM load
+// DOM 로드 시 애니메이션 초기화
 document.addEventListener('DOMContentLoaded', function() {
     initScrollAnimations();
 });
 
-// Local Storage Utilities
+// 로컬 스토리지 유틸리티
 const storage = {
     set: function(key, value) {
         try {
@@ -106,7 +106,7 @@ const storage = {
     }
 };
 
-// Format Number
+// 숫자 포맷팅
 function formatNumber(num, decimals = 0) {
     return num.toLocaleString('ko-KR', {
         minimumFractionDigits: decimals,
@@ -114,19 +114,19 @@ function formatNumber(num, decimals = 0) {
     });
 }
 
-// Format Percentage
+// 퍼센트 포맷팅
 function formatPercent(value, decimals = 1) {
     return `${value.toFixed(decimals)}%`;
 }
 
-// Generate Random Data (for demo purposes)
+// 랜덤 데이터 생성
 function generateRandomData(length, min, max) {
     return Array.from({ length }, () => 
         Math.floor(Math.random() * (max - min + 1)) + min
     );
 }
 
-// Copy to Clipboard
+// 클립보드 복사
 async function copyToClipboard(text) {
     try {
         await navigator.clipboard.writeText(text);
@@ -137,7 +137,7 @@ async function copyToClipboard(text) {
     }
 }
 
-// Show Toast Notification (simple version)
+// 토스트 알림 표시
 function showToast(message, type = 'info', duration = 3000) {
     const toast = document.createElement('div');
     toast.className = `toast toast-${type}`;
@@ -165,25 +165,25 @@ function showToast(message, type = 'info', duration = 3000) {
     }, duration);
 }
 
-// Get Query Parameter
+// URL 쿼리 파라미터 가져오기
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
 
-// Set Query Parameter
+// URL 쿼리 파라미터 설정
 function setQueryParam(param, value) {
     const url = new URL(window.location);
     url.searchParams.set(param, value);
     window.history.pushState({}, '', url);
 }
 
-// Check if mobile device
+// 모바일 기기 체크
 function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-// Get Screen Size
+// 화면 크기 체크
 function getScreenSize() {
     const width = window.innerWidth;
     if (width < 640) return 'mobile';
@@ -191,23 +191,23 @@ function getScreenSize() {
     return 'desktop';
 }
 
-// Prevent Default
+// 기본 동작 방지
 function preventDefault(e) {
     e.preventDefault();
 }
 
-// Stop Propagation
+// 이벤트 전파 중지
 function stopPropagation(e) {
     e.stopPropagation();
 }
 
-// Add Event Listener with cleanup
+// 이벤트 리스너 추가 및 정리
 function addEventListenerWithCleanup(element, event, handler) {
     element.addEventListener(event, handler);
     return () => element.removeEventListener(event, handler);
 }
 
-// Wait for element to exist
+// 요소가 생성될 때까지 대기
 function waitForElement(selector, timeout = 5000) {
     return new Promise((resolve, reject) => {
         const element = document.querySelector(selector);
@@ -236,7 +236,7 @@ function waitForElement(selector, timeout = 5000) {
     });
 }
 
-// Export utilities
+// 유틸리티 함수 전역 노출
 window.utils = {
     smoothScrollTo,
     debounce,
@@ -258,18 +258,17 @@ window.utils = {
     waitForElement
 };
 
-// dashboard에서 사용할 common 코드
-// Navigation
+// 인트로 페이지로 이동
 function navigateToIntro() {
     window.location.href = '/';
 }
 
-// Chart Configuration (공통 Chart 옵션 추가)
+// Chart.js 기본 설정
 Chart.defaults.color = '#cbd5e1';
 Chart.defaults.borderColor = 'rgba(148, 163, 184, 0.2)';
 Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
 
-// ✅ 공통 Chart 옵션 객체 추가 (A/B에서 공통 사용)
+// 공통 Chart 옵션
 window.chartBaseOptions = {
     responsive: true,
     maintainAspectRatio: true,
@@ -304,24 +303,26 @@ window.chartBaseOptions = {
     }
 };
 
-// ✅ 전역 Chart 인스턴스 분리 방지용 네임스페이스 추가
+// Chart 인스턴스 저장소
 window.chartInstances_A = {};
 window.chartInstances_B = {};
 
+// 대시보드 탭 전환 로직
 document.addEventListener("DOMContentLoaded", () => {
     const navItems = document.querySelectorAll(".nav-item");
     const tabContents = document.querySelectorAll(".tab-content");
 
-    // ✅ 최초 페이지 진입 시 A탭 활성화 + Accuracy 표시
+    // 최초 A탭 활성화
     tabContents.forEach(c => c.classList.remove("active"));
     document.getElementById("tab-preprocessing1")?.classList.add("active");
     navItems.forEach(i => i.classList.remove("active"));
     document.querySelector(".nav-item[data-tab='preprocessing1']")?.classList.add("active");
 
-    // ✅ A탭일 때 Accuracy 보이기
+    // Accuracy 표시
     const accItem = document.querySelector(".info-accuracy");
     if (accItem) accItem.style.display = "flex";
 
+    // 탭 전환 함수
     window.switchTab = function (tabName) {
         tabContents.forEach(c => c.classList.remove("active"));
         navItems.forEach(i => i.classList.remove("active"));
@@ -330,7 +331,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(`.nav-item[data-tab='${tabName}']`)?.classList.add("active");
         document.querySelector(".main-content")?.scrollTo({ top: 0, behavior: "smooth" });
 
-        // ✅ Accuracy 표시/숨김 제어
+        // Accuracy 표시/숨김
         const accItem = document.querySelector(".info-accuracy");
         if (accItem) {
             if (tabName === "preprocessing1") {
@@ -340,7 +341,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        // ✅ 각 탭 기본 상태 초기화 + 렌더 호출
+        // A탭 초기화 및 렌더링
         if (tabName === "preprocessing1") {
             document.querySelectorAll("#tab-preprocessing1 .subtab").forEach(t => t.classList.remove("active"));
             document.querySelector("#tab-preprocessing1 .subtab[data-target='subtab-predict']")?.classList.add("active");
@@ -351,6 +352,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (window.renderCharts_A) window.renderCharts_A("Product_8");
         }
 
+        // B탭 초기화 및 렌더링
         if (tabName === "preprocessing2") {
             document.querySelectorAll("#tab-preprocessing2 .subtab").forEach(t => t.classList.remove("active"));
             document.querySelector("#tab-preprocessing2 .subtab[data-target='subtab-predict-b']")?.classList.add("active");
@@ -360,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector("#tab-preprocessing2 .filter-button")?.classList.add("active");
             if (window.renderCharts_B) window.renderCharts_B("Product_8");
 
-            // 탭이 전환된 후 약간의 지연으로 Chart.js 리사이즈 강제
+            // Chart 리사이즈
             setTimeout(() => {
                 Object.values(window.chartInstances_B || {}).forEach(ch => {
                     if (ch && ch.resize) ch.resize();

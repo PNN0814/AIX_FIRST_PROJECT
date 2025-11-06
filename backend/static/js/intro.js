@@ -1,16 +1,10 @@
-// Navigation function
 function navigateToDashboard() {
     window.location.href = '/dashboard';
 }
 
-// Add smooth scroll behavior
 document.addEventListener('DOMContentLoaded', function() {
-    // Animate elements on scroll
-    const observerOptions = {
-        threshold: 0,
-        rootMargin: '0px 0px 200px 0px'
-    };
-
+    // 스크롤 시 카드 애니메이션
+    const observerOptions = { threshold: 0, rootMargin: '0px 0px 200px 0px' };
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -20,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Observe all cards
     const cards = document.querySelectorAll('.team-card, .process-card, .tech-card, .achievement-card');
     cards.forEach((card, index) => {
         card.style.opacity = '0';
@@ -29,16 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
 
-    // Parallax effect for hero
+    // 히어로 섹션 패럴랙스
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const heroContent = document.querySelector('.hero-content');
-        if (heroContent) {
-            heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-        }
+        if (heroContent) heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
     });
 
-    // Add hover effect to CTA buttons
+    // CTA 버튼 호버 효과
     const ctaButtons = document.querySelectorAll('.cta-button');
     ctaButtons.forEach(button => {
         button.addEventListener('mouseenter', function() {

@@ -1,6 +1,6 @@
 /* Intro Page Specific Styles */
 
-/* Hero Section */
+/* 히어로 섹션 */
 .hero-section {
     position: relative;
     min-height: 70vh;
@@ -11,6 +11,7 @@
     overflow: hidden;
 }
 
+/* 히어로 오버레이 */
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -28,6 +29,7 @@
     background-size: 50px 50px;
 }
 
+/* 히어로 콘텐츠 */
 .hero-content {
     position: relative;
     z-index: 1;
@@ -35,6 +37,7 @@
     text-align: center;
 }
 
+/* 뱃지 */
 .badge {
     display: inline-flex;
     align-items: center;
@@ -53,6 +56,7 @@
     font-size: 18px;
 }
 
+/* 히어로 타이틀 */
 .hero-title {
     font-size: 56px;
     font-weight: 700;
@@ -64,6 +68,7 @@
     line-height: 1.2;
 }
 
+/* 히어로 설명 */
 .hero-description {
     font-size: 20px;
     color: #cbd5e1;
@@ -71,6 +76,7 @@
     line-height: 1.6;
 }
 
+/* CTA 버튼 */
 .cta-button {
     display: inline-flex;
     align-items: center;
@@ -93,6 +99,7 @@
     box-shadow: 0 15px 40px rgba(59, 130, 246, 0.4);
 }
 
+/* 화살표 아이콘 */
 .arrow {
     font-size: 20px;
     transition: transform 0.3s ease;
@@ -102,6 +109,7 @@
     transform: translateX(5px);
 }
 
+/* 성과 그리드 */
 .achievements {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -112,6 +120,7 @@
     margin-right: auto;
 }
 
+/* 성과 카드 */
 .achievement-card {
     background: rgba(30, 41, 59, 0.5);
     backdrop-filter: blur(10px);
@@ -139,7 +148,7 @@
     color: #34d399;
 }
 
-/* Section Styles */
+/* 섹션 공통 스타일 */
 .team-section,
 .process-section,
 .tech-section {
@@ -148,6 +157,7 @@
     margin: 0 auto;
 }
 
+/* 섹션 뱃지 */
 .section-badge {
     display: inline-flex;
     align-items: center;
@@ -161,7 +171,7 @@
     color: #93c5fd;
 }
 
-/* Team Grid */
+/* 팀 그리드 */
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -174,6 +184,7 @@
     text-align: center;
 }
 
+/* 팀 아바타 */
 .team-avatar {
     margin-bottom: 24px;
 }
@@ -182,10 +193,9 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    /* background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); */
-    background-size: cover;     /* 이미지 전체가 보이게 */
-    background-position: center;  /* 가운데 정렬 */
-    background-color: #000;       /* 이미지 주변 여백 색 (선택) */
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,6 +217,7 @@
     color: white;
 }
 
+/* 팀 정보 */
 .team-name {
     font-size: 24px;
     font-weight: 600;
@@ -220,6 +231,7 @@
     margin-bottom: 20px;
 }
 
+/* 기여도 뱃지 */
 .team-contributions {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +248,7 @@
     border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
-/* Process Grid */
+/* 프로세스 그리드 */
 .process-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -253,9 +265,9 @@
     right: 20px;
     font-size: 48px;
     font-weight: 700;
-    /* color: rgba(255, 255, 255, 0.1); */
 }
 
+/* 프로세스 아이콘 */
 .process-icon {
     width: 60px;
     height: 60px;
@@ -280,7 +292,7 @@
     line-height: 1.6;
 }
 
-/* Tech Grid */
+/* 기술 그리드 */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -294,6 +306,7 @@
     margin-bottom: 20px;
 }
 
+/* 기술 리스트 */
 .tech-list {
     display: flex;
     flex-direction: column;
@@ -313,11 +326,10 @@
     font-weight: 700;
 }
 
-/* CTA Section */
+/* CTA 섹션 */
 .cta-section {
     padding: 100px 20px;
     text-align: center;
-    /* background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); */
     background: linear-gradient(135deg, rgb(0 97 255 / 10%) 0%, rgba(139, 92, 246, 0.1) 100%);
     border-top: 1px solid rgba(148, 163, 184, 0.2);
     border-bottom: 1px solid rgba(148, 163, 184, 0.2);
@@ -339,7 +351,7 @@
     margin-right: auto;
 }
 
-/* Footer */
+/* 푸터 */
 .footer {
     padding: 40px 20px;
     text-align: center;
@@ -352,7 +364,7 @@
     font-size: 14px;
 }
 
-/* Responsive */
+/* 모바일 반응형 */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 36px;

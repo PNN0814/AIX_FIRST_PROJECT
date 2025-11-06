@@ -1,31 +1,32 @@
 /* Common Styles - 공통 스타일 */
 
-/* Reset & Base */
+/* 기본 리셋 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* body 기본 스타일 */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    /* background: linear-gradient(135deg, #0a1628 0%, #1a2847 50%, #0f2350 100%); */
     background: linear-gradient(135deg, #0a1628 0%, #000f31 50%, #0f2350 100%);
     color: #ffffff;
     overflow-x: hidden;
 }
 
-/* Typography */
+/* 제목 스타일 */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
 }
 
+/* 문단 스타일 */
 p {
     line-height: 1.6;
 }
 
-/* Buttons */
+/* 버튼 기본 스타일 */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -41,6 +42,7 @@ p {
     text-decoration: none;
 }
 
+/* 주요 버튼 */
 .btn-primary {
     background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
     color: white;
@@ -52,6 +54,7 @@ p {
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
+/* 보조 버튼 */
 .btn-secondary {
     background: rgba(59, 130, 246, 0.1);
     border: 1px solid rgba(59, 130, 246, 0.3);
@@ -62,6 +65,7 @@ p {
     background: rgba(59, 130, 246, 0.2);
 }
 
+/* 투명 버튼 */
 .btn-ghost {
     background: transparent;
     color: #cbd5e1;
@@ -71,7 +75,7 @@ p {
     background: rgba(59, 130, 246, 0.1);
 }
 
-/* Cards */
+/* 카드 스타일 */
 .card {
     background: rgba(30, 41, 59, 0.5);
     backdrop-filter: blur(10px);
@@ -103,7 +107,7 @@ p {
     color: #94a3b8;
 }
 
-/* Badges */
+/* 뱃지 기본 스타일 */
 .badge {
     display: inline-flex;
     align-items: center;
@@ -132,7 +136,7 @@ p {
     color: #fdba74;
 }
 
-/* Grid Layouts */
+/* 그리드 레이아웃 */
 .grid {
     display: grid;
     gap: 24px;
@@ -154,7 +158,7 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-/* Flex Utilities */
+/* Flex 유틸리티 */
 .flex {
     display: flex;
 }
@@ -188,7 +192,7 @@ p {
     gap: 24px;
 }
 
-/* Spacing */
+/* 여백 유틸리티 */
 .mb-sm { margin-bottom: 8px; }
 .mb-md { margin-bottom: 16px; }
 .mb-lg { margin-bottom: 24px; }
@@ -204,7 +208,7 @@ p {
 .p-lg { padding: 24px; }
 .p-xl { padding: 32px; }
 
-/* Text Utilities */
+/* 텍스트 유틸리티 */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
@@ -216,7 +220,7 @@ p {
 .text-warning { color: #fbbf24; }
 .text-danger { color: #ef4444; }
 
-/* Backgrounds */
+/* 배경 오버레이 */
 .bg-overlay {
     position: absolute;
     inset: 0;
@@ -224,6 +228,7 @@ p {
     pointer-events: none;
 }
 
+/* 그라데이션 배경 */
 .bg-gradient-primary {
     background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
 }
@@ -236,7 +241,7 @@ p {
     background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
 }
 
-/* Scrollbar Styling */
+/* 스크롤바 스타일 */
 ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -256,7 +261,7 @@ p {
     background: rgba(59, 130, 246, 0.5);
 }
 
-/* Animations */
+/* 페이드인 애니메이션 */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -268,6 +273,7 @@ p {
     }
 }
 
+/* 좌측 슬라이드 애니메이션 */
 @keyframes slideInLeft {
     from {
         opacity: 0;
@@ -279,6 +285,7 @@ p {
     }
 }
 
+/* 우측 슬라이드 애니메이션 */
 @keyframes slideInRight {
     from {
         opacity: 0;
@@ -290,6 +297,7 @@ p {
     }
 }
 
+/* 펄스 애니메이션 */
 @keyframes pulse {
     0%, 100% {
         opacity: 1;
@@ -299,6 +307,7 @@ p {
     }
 }
 
+/* 애니메이션 클래스 */
 .fade-in {
     animation: fadeIn 0.6s ease;
 }
@@ -311,7 +320,7 @@ p {
     animation: slideInRight 0.6s ease;
 }
 
-/* Overlay Pattern */
+/* 그리드 패턴 배경 */
 .grid-pattern {
     background-image: 
         linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
@@ -319,14 +328,14 @@ p {
     background-size: 50px 50px;
 }
 
-/* Container */
+/* 컨테이너 */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* Section */
+/* 섹션 스타일 */
 .section {
     padding: 80px 20px;
 }
@@ -349,7 +358,7 @@ p {
     margin: 0 auto;
 }
 
-/* Responsive */
+/* 태블릿 반응형 */
 @media (max-width: 1024px) {
     .grid-2,
     .grid-3,
@@ -362,6 +371,7 @@ p {
     }
 }
 
+/* 모바일 반응형 */
 @media (max-width: 768px) {
     .grid-2,
     .grid-3,
@@ -382,6 +392,7 @@ p {
     }
 }
 
+/* 작은 모바일 반응형 */
 @media (max-width: 480px) {
     .btn {
         padding: 10px 20px;

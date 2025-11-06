@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="dashboard-container">
+
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
@@ -41,7 +42,6 @@
                         <span class="info-label">전체 RMSE 평균</span>
                         <span class="info-value">0.00%</span>
                     </div>
-                    <!-- Accuracy 완전 숨김 -->
                     <div class="info-item info-accuracy" style="display:none;">
                         <span class="info-label">전체 Accuracy 평균</span>
                         <span class="info-value">0.00%</span>
@@ -52,7 +52,8 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- ===================== A탭 ===================== -->
+
+            <!-- A탭 -->
             <div id="tab-preprocessing1" class="tab-content active">
                 <div class="content-header">
                     <h1 class="content-title">
@@ -94,7 +95,7 @@
                 </div>
             </div>
 
-            <!-- ===================== B탭 ===================== -->
+            <!-- B탭 -->
             <div id="tab-preprocessing2" class="tab-content">
                 <div class="content-header">
                     <h1 class="content-title">
@@ -104,7 +105,6 @@
                     <div class="header-stats">
                         <div class="stat-badge"><span class="stat-label">필터별 MAE 평균</span><span class="stat-value">00.0%</span></div>
                         <div class="stat-badge"><span class="stat-label">필터별 RMSE 평균</span><span class="stat-value">00.0%</span></div>
-                        <!-- Accuracy 숨김 -->
                         <div class="stat-badge" style="display:none;"><span class="stat-label">필터별 Accuracy 평균</span><span class="stat-value">-</span></div>
                     </div>
                 </div>
